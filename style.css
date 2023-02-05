@@ -1,0 +1,355 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+.container {
+    width: 100%;
+    padding: 20px;
+
+}
+
+
+.top {
+    width: 100%;
+    padding: 10px;
+    position: relative;
+}
+
+.top .teslaImg {
+    margin-left: 70px;
+    transition: 1s ease;
+}
+
+.top .wheelsOne {
+    position: absolute;
+    top: 273px;
+    left: 431px;
+    animation: .1s linear 0s normal none infinite running rot;
+
+
+}
+
+.top .wheelsTwo {
+    position: absolute;
+    top: 273px;
+    left: 982px;
+    animation: .1s linear 0s normal none infinite running rot;
+
+}
+
+
+.speedOne {
+    animation: 3s linear 0s normal none infinite running rot;
+}
+
+.speedTwo {
+    animation: 1s linear 0s normal none infinite running rot;
+}
+
+.speedThree {
+    animation: .5s linear 0s normal none infinite running rot;
+}
+
+.speedFour {
+    animation: .1s linear 0s normal none infinite running rot;
+}
+
+@keyframes rot {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.bottom {
+    margin-top: 20px;
+}
+
+.bottom .compund {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+
+}
+
+.bottom .compund .left,
+.bottom .compund .right {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.bottom .compund .left .zps,
+.bottom .compund .right .prc {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #707070;
+}
+
+.bottom .compund .left .km,
+.bottom .compund .right .price {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 79px;
+
+    color: #000000;
+
+}
+
+.bottom_functions {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+.bottom_functions .speed_item,
+.bottom_functions .temp_item,
+.bottom_functions .wheel_item {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.bottom_functions .speed_item .right,
+.bottom_functions .temp_item .right,
+.bottom_functions .wheel_item .right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.bottom_functions .speed_item .right img,
+.bottom_functions .temp_item .right img,
+.bottom_functions .wheel_item .right img {
+    cursor: pointer;
+}
+
+
+.bottom_functions .ac_item,
+.bottom_functions .long_item,
+.bottom_functions .wv_item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.bottom_functions .ac_item .TurnOn,
+.bottom_functions .long_item .TurnOn,
+.bottom_functions .wv_item .TurnOn {
+    padding-top: 1px;
+    padding-left: 2px;
+    width: 48px;
+    height: 24px;
+    border-radius: 20px;
+    background-color: #c4c4c4;
+    cursor: pointer;
+}
+
+.bottom_functions .ac_item .TurnOn .Onoff,
+.bottom_functions .long_item .TurnOn .Onoff,
+.bottom_functions .wv_item .TurnOn .Onoff {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: white;
+    transition: 2s ease;
+}
+
+
+.bottom_functions .speed_item span,
+.bottom_functions .temp_item span,
+.bottom_functions .wheel_item span,
+.bottom_functions .ac_item span,
+.bottom_functions .long_item span,
+.bottom_functions .wv_item span {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    
+    color: #707070;
+    
+    
+}
+
+.active {
+    padding-top: 1px !important;
+    padding-left: 26px !important;
+    width: 48px;
+    height: 24px;
+    border-radius: 20px;
+    background-color: yellow !important;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.middle .compund {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+
+}
+
+.middle .compund .left,
+.middle .compund .right {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.middle .compund .left .zps,
+.middle .compund .right .prc {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+
+    color: #707070;
+}
+
+.middle .compund .left .km,
+.middle .compund .right .price {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 79px;
+
+    color: #000000;
+
+}
+
+.big_container{
+    display: none;
+    opacity: 0;
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.containerTwo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 200px;
+}
+
+
+.containerTwo .top {
+    padding-left: 200px;
+}
+
+
+/* .containerTwo .bottom_col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+
+/* .containerTwo .bottom_col .left {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    
+} */
+
+.containerTwo .bottom_side .colors {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.containerTwo .colors .btns:nth-child(1) {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: black;
+    cursor: pointer;
+}
+
+.containerTwo .colors .btns:nth-child(2) {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: rgb(222, 217, 217);
+    cursor: pointer;
+}
+
+.flexing {
+    display: flex;
+    align-items: center;
+    gap: 120px;
+    margin-top: 20px;
+}
+.containerTwo .colors .btns:nth-child(3){
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    cursor: pointer;
+    background-color: rgb(244, 212, 170);
+}
+
+.bottom_side {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.left_side {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.right_side {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+
+.look_click {
+    padding-top: 1px;
+    padding-left: 2px;
+    width: 48px;
+    height: 24px;
+    border-radius: 20px;
+    background-color: #c4c4c4;
+    cursor: pointer;
+}
+
+
+.mini_click {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: white;
+}
+
+.into {
+    transition: 1s ease;
+}
+
